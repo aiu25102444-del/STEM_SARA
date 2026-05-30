@@ -1,0 +1,848 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFF7;
+    color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.site-header {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 9%;
+}
+
+
+
+.logo img {
+
+    margin-top: 20%;
+    margin-bottom: 0%;
+    margin-left: 9%;
+height:70px;
+width: 100px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 0%;
+    margin-right: 15%;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color:#51B1B2;
+}
+
+
+.hero {
+    min-height: 80vh;
+
+
+  background-image:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.0)),
+        url("../images/hero.jpg");
+
+
+    background-color: #f4f4ed;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero .container {
+    max-width: 900px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    text-wrap:nowrap;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition-duration: 2s;
+color:white;
+}
+.hero h2:hover{
+color:#fdfdfd;
+transition: ease-in;
+}
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    margin-left: 40%;
+    text-align: center;
+color:white;
+font-weight:350;
+font-weight: bold;
+}
+
+/* Reusable Button */
+.btn {
+    display: inline-block;
+    background-color:#02787a;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    /* text-align: right; */
+    margin-left: 40%;
+}
+
+.btn:hover {
+    background-color:#769696;
+    
+}
+
+
+.about-preview p {
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+    font-size: 1.001rem;
+}
+
+
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+
+    border: 1px solid #e0e0e0;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #b2e0e1;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+.site-footer {
+    background-color: #0C0C0C;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+
+    /* Header Responsive */
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Navigation Responsive */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    .card {
+        width: 100%;
+    }
+
+
+
+
+}
+
+.site-footer {
+    background-color:#1A1A1A;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0;
+    height: 20%;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.site-footer p {
+    font-size: 0.95rem;
+    max-width: 300px;
+    line-height: 1.8;
+}
+
+.site-footer ul {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px 40px;
+}
+
+.site-footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.site-footer ul li a:hover {
+    color: #77efdb;
+}
+
+/* to make the footer responsive */
+
+@media (max-width: 480px) {
+
+    .site-footer .container {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .site-footer ul {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/*  2: page  about*/
+
+.about-hero {
+
+    min-height: 60vh;
+
+  background-image:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("../images/about.jpg");
+
+
+    background-color: #f4f4ed;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    background-attachment: fixed;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+margin-top: 0.2%;
+margin-left: 15%;
+color: #edf4f4;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    max-width: 1100px;
+    margin-left: 40%;
+    flex-wrap:nowrap;
+    font-weight: 300;
+    color: #faf5f5;
+    font-weight: 350;
+margin: auto;
+}
+
+/* 
+  some General elements for about section
+ */
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-section p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.mission-vision {
+    padding: 80px 0;
+}
+
+.values-section {
+    padding: 80px 0;
+}
+
+.faq-section {
+    padding: 80px 0;
+}
+
+.faq-item {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e0e0e0;
+}
+
+.faq-item h3 {
+    margin-bottom: 15px;
+}
+
+.cta-section {
+
+    background-color: rgb(24, 22, 22);
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 20px 60px;
+
+    margin-bottom: 0;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+    color: #dddddd;
+    font-style: cursive;
+}
+
+.cta-section .btn {
+
+    background-color: white;
+    color: black;
+
+    border-radius: 5px;
+    /* align-items: left; */
+    margin: auto;
+}
+
+.cta-section .btn:hover {
+    background-color: #dddddd;
+}
+
+
+@media (max-width: 400px) {  
+/* here confused */
+    .about-hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item {
+        padding: 20px;
+    }
+
+}
+
+/* 3:  team page */
+
+
+.team-hero {
+
+    min-height: 80vh;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("../images/team.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+   background-attachment: fixed;
+}
+ 
+.team-card{
+    /* margin: right 20%; */
+border-radius: 50px;
+text-align: center;
+}
+
+.img{
+
+    border-radius: 40px;
+}
+.team-hero h2{
+
+   text-align: left; 
+   margin-right:50% ;
+   color: white;
+}
+
+.team-hero p{
+    text-wrap: nowrap;
+margin: auto;
+font-weight: bold;
+color: white;
+}
+.team-image{
+
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 50px;
+}
+
+/* 4: events page */
+
+
+.events-hero {
+
+    min-height: 50vh;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)), 
+        url("../images/event_banner_3.jpg");
+    
+    background-color: #f4f4ed;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+    background-attachment: fixed;
+}
+
+.events-hero h2 {
+    font-size: 3rem;
+    margin:auto;
+    margin-bottom: 20%;
+}
+
+.events-hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 10%;
+    color: white;
+}
+
+
+.events-intro {
+    padding: 80px 0;
+}
+
+.events-intro p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.upcoming-events {
+    padding: 80px 0;
+}
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-badge {
+
+    display: inline-block;
+
+    background-color: rgb(243, 186, 14);
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.event-date {
+
+    font-weight: bold;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    color: #666666;
+}
+
+
+.roadmap-section {
+    padding: 80px 0;
+}
+
+/* Roadmap List */
+.roadmap-list {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e0e0e0;
+}
+
+.roadmap-list li {
+
+    margin-bottom: 15px;
+
+    margin-left: 20px;
+
+    line-height: 1.8;
+}
+
+.roadmap-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+.why-participate {
+    padding: 80px 0;
+}
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .events-hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .events-hero p {
+        font-size: 1rem;
+    }
+
+    .event-card img {
+        height: 200px;
+    }
+
+    .roadmap-list {
+        padding: 25px;
+    }
+
+}
+
+
+/*  5: contact page */
+
+
+.contact-layout {
+
+    display: flex;
+    gap: 50px;
+
+    align-items: flex-start;
+
+    padding: 80px 0;
+
+}
+
+
+.contact-hero {
+
+    min-height: 70vh;
+
+  background-image:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("../images/contact.png");
+
+
+    background-color: #f4f4ed;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+
+.contact-hero h1{
+    color: white;
+    margin: auto;
+}
+.contact-hero p{
+    margin: auto;
+    margin-top: 4%;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-card p{
+    color: #3e3c3c;
+
+}
+.contact-info {
+
+    flex: 1;
+}
+
+/* input field */
+.contact-form-container {
+
+    flex: 2;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.contact-form-container h2 {
+
+    margin-bottom: 25px;
+}
+
+
+.contact-form-container form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.contact-form-container label {
+
+    font-weight: 600;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #dcdcdc;
+
+    border-radius: 6px;
+
+    font-size: 1rem;
+
+    font-family: Arial, sans-serif;
+}
+
+/* input place */
+.contact-form-container textarea {
+
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+/* Button */
+
+.contact-form-container button {
+
+    width: fit-content;
+
+    padding: 12px 28px;
+
+    border:#b2e0e1;
+
+    border-radius: 6px;
+
+    background-color: rgb(3, 158, 137);
+
+    color: white;
+
+    font-size: 1rem;
+    align-items: left;
+}
+
+.contact-form-container button:hover {
+
+    opacity: 0.9;
+}
+
+ 
+.social-grid{
+
+    background-color: white;
+
+    padding: 60px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(173, 22, 22, 0.05);
+
+    background-image:linear-gradient(rgb(13, 6, 40), rgb(20, 9, 62), rgb(18, 15, 55));
+}
+
+
+.section-title {
+
+    margin-bottom: 10px;
+}
+
+.social-grid a{
+    display: block;
+    margin: 25px;
+    text-decoration: none;
+    color: #fb9506;
+}
+
+.social-grid a:hover{
+    color: rgb(173, 75, 4);
+}
+
+.faq-item h3{
+    color: #51B1B2;
+    font-style:arial;
+}
+.faq-item p{
+color: #666666;
+
+}
+@media (max-width: 768px) {
+
+    .contact-layout {
+
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form-container {
+
+        width: 100%;
+    }
+}
+
+
+
+/* future */
+/* projects, gallery,... */
