@@ -291,7 +291,7 @@ font-weight: bold;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("../images/about.jpg");
+        url("/images/about.jpg");
 
 
     background-color: #f4f4ed;
