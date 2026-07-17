@@ -88,7 +88,7 @@ width: 100px;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.0)),
-        url("./Images/hero.jpg");
+        url("../Images/hero.jpg");
 
 
     background-color: #f4f4ed;
@@ -291,7 +291,7 @@ font-weight: bold;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/Images/about.jpg");
+        url("../Images/about.jpg");
 
 
     background-color: #f4f4ed;
@@ -491,7 +491,7 @@ color: white;
     background-image: 
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.3)), 
-        url("./Images/event_banner_3.jpg");
+        url("../Images/event_banner_3.jpg");
     
     background-color: #f4f4ed;
 
@@ -669,7 +669,7 @@ color: white;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("./Images/contact.png");
+        url("../Images/contact.png");
 
 
     background-color: #f4f4ed;
@@ -846,3 +846,4 @@ color: #666666;
 
 /* future */
 /* projects, gallery,... */
+/* Questions?  */
