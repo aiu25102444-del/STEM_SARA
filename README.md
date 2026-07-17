@@ -19,8 +19,8 @@ A responsive multi-page website developed using **HTML5** and **CSS3** for a fic
 - Projects
 - Events
 - Gallery
-- Team
-- Contact
+
+> **Note:** The project also includes `team.html` and `contact.html` as optional pages. They are currently commented out in the navigation and can be integrated in future versions if needed.
 
 ## Technologies Used
 
@@ -51,7 +51,7 @@ A responsive multi-page website developed using **HTML5** and **CSS3** for a fic
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/your-username/3ZERO-Club.git
+git clone https://github.com/your-username/STEM_SARA.git
 ```
 
 2. Open `index.html` in your preferred web browser.
