@@ -2,14 +2,13 @@
 
 ![Homepage Preview](Images/homepage-preview.png)
 
-STEM_SARA is a fictional STEM education club website developed as a prototype for a web development project. Inspired by a real student-led initiative, the project demonstrates the design and development of a modern, multi-page website using **HTML5** and **CSS3**.
+STEM_SARA is a fictional 3Zero club website developed for a web development project. Inspired by a real student-led initiative, the project demonstrates the design and development of a modern, multi-page website using **HTML5** and **CSS3**.
 
 ## Features
 
 - Multi-page website
 - Responsive navigation bar
 - Modern and clean user interface
-- Image gallery
 - Organized folder structure
 - Built using only HTML and CSS
 
