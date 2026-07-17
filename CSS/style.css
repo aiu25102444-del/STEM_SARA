@@ -291,7 +291,7 @@ font-weight: bold;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("./images/about.jpg");
+        url("/Images/about.jpg");
 
 
     background-color: #f4f4ed;
@@ -437,7 +437,7 @@ margin: auto;
     background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("./images/team.jpg");
+        url("../Images/team.jpg");
 
     background-size: cover;
     background-position: center;
@@ -491,7 +491,7 @@ color: white;
     background-image: 
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.3)), 
-        url("./images/event_banner_3.jpg");
+        url("../Images/event_banner_3.jpg");
     
     background-color: #f4f4ed;
 
@@ -669,7 +669,7 @@ color: white;
   background-image:
         linear-gradient(rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("./images/contact.png");
+        url("./Images/contact.png");
 
 
     background-color: #f4f4ed;
