@@ -1,14 +1,15 @@
-# 3ZERO Club Website
+# STEM_SARA
 
-A responsive multi-page website developed using **HTML5** and **CSS3** for a fictional **3ZERO Club**. The website aims to promote the club's mission, showcase its activities, and provide visitors with information about its projects, events, and team.
+![Homepage Preview](Images/homepage-preview.png)
+
+STEM_SARA is a fictional STEM education club website developed as a prototype for a web development project. Inspired by a real student-led initiative, the project demonstrates the design and development of a modern, multi-page website using **HTML5** and **CSS3**.
 
 ## Features
 
-- Responsive navigation bar
 - Multi-page website
+- Responsive navigation bar
 - Modern and clean user interface
 - Image gallery
-- Contact page
 - Organized folder structure
 - Built using only HTML and CSS
 
@@ -16,11 +17,11 @@ A responsive multi-page website developed using **HTML5** and **CSS3** for a fic
 
 - Home
 - About
-- Projects
+- Team
 - Events
-- Gallery
+- Contact
 
-> **Note:** The project also includes `team.html` and `contact.html` as optional pages. They are currently commented out in the navigation and can be integrated in future versions if needed.
+> **Note:** The project also includes `project.html` and `gallery.html` as optional pages. They are currently commented out in the navigation and can be integrated into future versions if needed.
 
 ## Technologies Used
 
@@ -30,7 +31,7 @@ A responsive multi-page website developed using **HTML5** and **CSS3** for a fic
 ## Project Structure
 
 ```
-3ZERO-Club/
+STEM_SARA/
 │
 ├── CSS/
 │   └── style.css
@@ -48,7 +49,7 @@ A responsive multi-page website developed using **HTML5** and **CSS3** for a fic
 
 ## Getting Started
 
-1. Clone this repository.
+1. Clone the repository.
 
 ```bash
 git clone https://github.com/your-username/STEM_SARA.git
@@ -56,22 +57,14 @@ git clone https://github.com/your-username/STEM_SARA.git
 
 2. Open `index.html` in your preferred web browser.
 
-No additional software or installation is required.
-
-## Future Improvements
-
-- Add JavaScript for interactive features
-- Implement dark/light mode
-- Improve animations and transitions
-- Add a backend for contact form functionality
+No installation or additional software is required.
 
 ## Author
 
-**Fatima Salik**
-
+**Fatima Salik**  
 Computer Science Student  
 Albukhary International University
 
 ---
 
-*This project was developed for educational purposes as part of a web development course.*
+*This project was created for educational purposes as part of a university web development course.*
